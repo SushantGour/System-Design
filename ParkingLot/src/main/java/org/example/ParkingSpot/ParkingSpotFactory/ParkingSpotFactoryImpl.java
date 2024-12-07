@@ -1,6 +1,7 @@
-package org.example.Vehicle.ParkingSpot.ParkingSpotFactory;
+package org.example.ParkingSpot.ParkingSpotFactory;
 
 import org.example.Constants.ParkingSpotType;
+import org.example.ParkingSpot.*;
 import org.example.Vehicle.ParkingSpot.*;
 
 public class ParkingSpotFactoryImpl implements ParkingSpotFactory{

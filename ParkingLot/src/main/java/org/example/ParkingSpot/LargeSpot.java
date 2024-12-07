@@ -1,4 +1,4 @@
-package org.example.Vehicle.ParkingSpot;
+package org.example.ParkingSpot;
 
 import org.example.Constants.ParkingSpotType;
 
