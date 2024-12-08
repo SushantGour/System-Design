@@ -11,6 +11,7 @@ import org.example.Model.Location;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Person {
+    // Person class for storing person details.
     private String name;
     private Location location;
     private String email;
