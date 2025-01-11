@@ -140,9 +140,9 @@ public class ParkingLot {
         }
     }
 
-    public synchronized boolean isParkingFull(VehicleType vehicleType) {
+    public synchronized boolean isParkingFull() {
         for (ParkingFloor floor : parkingFloors.values()) {
-            if (!floor.isFull(vehicleType)) {
+            if (!floor.isFull()) {
                 return false;
             }
         }

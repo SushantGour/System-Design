@@ -6,7 +6,7 @@ import org.example.ParkingSpot.*;
 public class ParkingSpotFactoryImpl implements ParkingSpotFactory{
 
     @Override
-    public ParkingSpot createParkingSpot(String id, String type) {
+    public ParkingSpot createParkingSpot(String id, ParkingSpotType type) {
         if(type.equals(ParkingSpotType.HANDICAPPED)){
             return new HandicappedSpot(id);
         }

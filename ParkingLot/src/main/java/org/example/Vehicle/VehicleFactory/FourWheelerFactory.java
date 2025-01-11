@@ -7,7 +7,7 @@ import org.example.Vehicle.Vehicle;
 
 public class FourWheelerFactory implements VehicleFactory{
     @Override
-    public Vehicle createVehicle(String vehicleNumber, String type) {
+    public Vehicle createVehicle(String vehicleNumber, VehicleType type) {
         if(type.equals(VehicleType.CAR)){
             return new Car(vehicleNumber);
         }

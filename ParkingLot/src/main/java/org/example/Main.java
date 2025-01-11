@@ -31,8 +31,8 @@ public class Main {
 
         // Add parking spots to floors.
         ParkingSpotFactory parkingSpotFactory = new ParkingSpotFactoryImpl();
-        ParkingSpot handicappedSpot = parkingSpotFactory.createParkingSpot("parkingSpot1", String.valueOf(ParkingSpotType.HANDICAPPED));
-        ParkingSpot largeSpot = parkingSpotFactory.createParkingSpot("parkingSpot2", String.valueOf(ParkingSpotType.COMPACT));
+        ParkingSpot handicappedSpot = parkingSpotFactory.createParkingSpot("parkingSpot1", ParkingSpotType.HANDICAPPED);
+        ParkingSpot largeSpot = parkingSpotFactory.createParkingSpot("parkingSpot2", ParkingSpotType.COMPACT);
         parkingLot.addParkingSpot("Floor1", handicappedSpot);
         parkingLot.addParkingSpot("Floor2", largeSpot);
 
@@ -44,7 +44,7 @@ public class Main {
 
         // Test entry gate functionality.
         VehicleFactory vehicleFactory = new FourWheelerFactory();
-        Vehicle car = vehicleFactory.createVehicle("HR-35-BP07", String.valueOf(VehicleType.CAR));
+        Vehicle car = vehicleFactory.createVehicle("HR-35-BP07", VehicleType.CAR);
         gate1.generateTicket(car); // Generate ticket at entry gate
 
         // Test exit gate functionality.

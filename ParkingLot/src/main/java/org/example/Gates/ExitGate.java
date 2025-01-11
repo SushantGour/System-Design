@@ -28,7 +28,7 @@ public class ExitGate {
     public void processPayment(Vehicle vehicle, PaymentStrategy paymentStrategy){
         ParkingTicket ticket = vehicle.getParkingTicket();
 
-        if (Objects.nonNull(ticket) || ticket.getParkingTicketStatus() != ParkingTicketStatus.ACTIVE) {
+        if (Objects.nonNull(ticket) && ticket.getParkingTicketStatus() != ParkingTicketStatus.ACTIVE) {
             throw new IllegalArgumentException("Invalid ticket.");
         }
 
